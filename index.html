@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lautaro Espinillo - Frontend Web Developer</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav">
+        <button class="switch" id="switch">
+          <span class="material-icons"> brightness_high </span>
+          <span class="material-icons"> nights_stay </span>
+        </button>
+        <li>
+          <a href="#skills" class="nav-link">Habilidades</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="nav-link">Proyectos</a>
+        </li>
+        <li>
+          <a href="#about-me" class="nav-link">Sobre mi</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link">Contacto</a>
+        </li>
+      </ul>
+
+      <span class="material-icons barsIcon"> menu </span>
+    </nav>
+
+    <div class="container" id="header">
+      <section class="container_section">
+        <header>
+          <div class="titles">
+            <h6>Hola, mi nombre es</h6>
+            <h1>Lautaro Espinillo.</h1>
+            <h2>Frontend Web Developer.</h2>
+            <p>
+              Frontend Developer, Estudiante de Lic. en Informatica, Autodidacta. <br />
+              Con muchas ganas de empezar a trabajar como desarrollador frontend en una empresa
+              donde pueda aprender y crecer profesionalmente.
+            </p>
+            <div class="buttons">
+              <a href="#portfolio" class="btn-header button-74">Mis projectos</a>
+              <a href="#about-me" class="btn-header button-74">Sobre mi</a>
+            </div>
+          </div>
+          <div class="perfil">
+            <img src="./images/foto_perfil.jpg" alt="" />
+          </div>
+        </header>
+        <footer class="footer_navigate">
+          <a href="#skills">
+            <img src="./images/hole_stairs.svg" alt="rabbit hole" />
+            <p>Go Deeper</p>
+            <p>&darr;</p>
+          </a>
+        </footer>
+      </section>
+    </div>
+
+    <div class="container" id="skills">
+      <section
+        class="container_section"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-duration="500"
+      >
+        <h2 class="section-title">Habilidades</h2>
+        <article class="stack-container">
+          <div class="stack">
+            <img class="stack-icon" src="images/icon_frontend.png" alt="react icon" />
+            <h6>Front-end</h6>
+            <p><span class="material-icons"> arrow_right </span>HTML</p>
+            <p><span class="material-icons"> arrow_right </span>CSS</p>
+            <p><span class="material-icons"> arrow_right </span>Javascript</p>
+            <p><span class="material-icons"> arrow_right </span>React</p>
+            <p><span class="material-icons"> arrow_right </span>Bootstrap</p>
+            <p><span class="material-icons"> arrow_right </span>Sass</p>
+            <p><span class="material-icons"> arrow_right </span>Styled-components</p>
+          </div>
+          <div class="stack">
+            <img class="stack-icon" src="images/icon_database.svg" alt="database icon" />
+            <h6>Back-end</h6>
+            <p><span class="material-icons"> arrow_right </span>Node.js</p>
+            <p><span class="material-icons"> arrow_right </span>MongoDB</p>
+            <p><span class="material-icons"> arrow_right </span>SQL</p>
+          </div>
+          <div class="stack">
+            <img class="stack-icon" src="images/icon_tools.png" alt="tools icon" />
+            <h6>Others</h6>
+            <p><span class="material-icons"> arrow_right </span>GIT</p>
+            <p><span class="material-icons"> arrow_right </span>Express</p>
+            <p><span class="material-icons"> arrow_right </span>NPM</p>
+          </div>
+        </article>
+        <footer class="footer_navigate">
+          <a href="#portfolio">
+            <img src="./images/hole_jump.png" alt="rabbit hole" />
+            <p>Jump!</p>
+            <p>&darr;</p>
+          </a>
+        </footer>
+      </section>
+    </div>
+
+    <div class="container" id="portfolio">
+      <section
+        class="container_section"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-duration="500"
+      >
+        <h2 class="section-title">Proyectos</h2>
+        <div class="projects-container">
+          <div class="project">
+            <header>
+              <span class="etiqueta html">HTML</span>
+              <span class="etiqueta css">CSS</span>
+              <span class="etiqueta js">JS</span>
+              <span class="etiqueta api">API</span>
+            </header>
+            <main>
+              <img src="./images/cryptoconverter.png" alt="" />
+              <h3>Crypto Converter</h3>
+              <p>
+                Aplicacion que muestra el valor actual de distintas criptomonedas en diferentes
+                monedas FIAT.
+              </p>
+              <div class="projects-buttons">
+                <a
+                  href="https://thelaucha.github.io/CryptoConverter"
+                  target="_blank"
+                  class="project-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/TheLaucha/CryptoConverter"
+                  target="_blank"
+                  class="project-btn"
+                  >Github</a
+                >
+              </div>
+            </main>
+          </div>
+          <div class="project">
+            <header>
+              <span class="etiqueta html">HTML</span>
+              <span class="etiqueta css">CSS</span>
+              <span class="etiqueta js">JS</span>
+            </header>
+            <main>
+              <img src="./images/binaryconverter.png" alt="" />
+              <h3>Binary Converter</h3>
+              <p>Aplicacion que convierte numero binario en decimal y viceversa.</p>
+              <div class="projects-buttons">
+                <a
+                  href="https://thelaucha.github.io/Binary-Decimal-Converter"
+                  target="_blank"
+                  class="project-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/TheLaucha/Binary-Decimal-Converter"
+                  target="_blank"
+                  class="project-btn"
+                  >Github</a
+                >
+              </div>
+            </main>
+          </div>
+          <div class="project">
+            <header>
+              <span class="etiqueta html">HTML</span>
+              <span class="etiqueta css">CSS</span>
+              <span class="etiqueta js">JS</span>
+            </header>
+            <main>
+              <img src="./images/pokedex.png" alt="" />
+              <h3>Pokedex</h3>
+              <p>Aplicacion que muestra los distintos pokemons que existen con sus habilidades.</p>
+              <div class="projects-buttons">
+                <a href="https://thelaucha.github.io/pokedex" target="_blank" class="project-btn"
+                  >Live Demo</a
+                >
+                <a href="https://github.com/TheLaucha/pokedex" target="_blank" class="project-btn"
+                  >Github</a
+                >
+              </div>
+            </main>
+          </div>
+          <div class="project">
+            <header>
+              <span class="etiqueta html">HTML</span>
+              <span class="etiqueta css">CSS</span>
+              <span class="etiqueta js">JS</span>
+            </header>
+            <main>
+              <img src="./images/simondice.png" alt="" />
+              <h3>Simon dice</h3>
+              <p>Clasico juego de memoria con distintas dificultades y sistema de turnos.</p>
+              <div class="projects-buttons">
+                <a href="https://thelaucha.github.io/simon-dice" target="_blank" class="project-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/TheLaucha/simon-dice"
+                  target="_blank"
+                  class="project-btn"
+                  >Github</a
+                >
+              </div>
+            </main>
+          </div>
+          <div class="project">
+            <header>
+              <span class="etiqueta html">HTML</span>
+              <span class="etiqueta css">CSS</span>
+              <span class="etiqueta js">JS</span>
+            </header>
+            <main>
+              <img src="./images/memotest.png" alt="" />
+              <h3>Memotest</h3>
+              <p>Clasico juego de memoria con tematica "rapera" con sistema de puntuacion.</p>
+              <div class="projects-buttons">
+                <a
+                  href="https://thelaucha.github.io/Memotest-rapero"
+                  target="_blank"
+                  class="project-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/TheLaucha/Memotest-rapero"
+                  target="_blank"
+                  class="project-btn"
+                  >Github</a
+                >
+              </div>
+            </main>
+          </div>
+          <div class="project">
+            <header>
+              <span class="etiqueta html">HTML</span>
+              <span class="etiqueta css">CSS</span>
+              <span class="etiqueta js">JS</span>
+              <span class="etiqueta api">API</span>
+            </header>
+            <main>
+              <img src="./images/songsearch.png" alt="" />
+              <h3>Song Search</h3>
+              <p>Aplicacion que busca la lirica de una cancion e info del artista.</p>
+              <div class="projects-buttons">
+                <a href="https://thelaucha.github.io/SongSearch" target="_blank" class="project-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/TheLaucha/SongSearch"
+                  target="_blank"
+                  class="project-btn"
+                  >Github</a
+                >
+              </div>
+            </main>
+          </div>
+          <div class="project">
+            <header>
+              <span class="etiqueta html">HTML</span>
+              <span class="etiqueta css">CSS</span>
+              <span class="etiqueta js">JS</span>
+              <span class="etiqueta api">API</span>
+            </header>
+            <main>
+              <img src="./images/weather.png" alt="" />
+              <h3>Pronostico</h3>
+              <p>
+                Aplicacion que muestra el pronostico de tu ubicacion actual y permite buscar el
+                pronostico de otros lugares.
+              </p>
+              <div class="projects-buttons">
+                <a
+                  href="https://thelaucha.github.io/Weather-Web"
+                  target="_blank"
+                  class="project-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/TheLaucha/Weather-Web"
+                  target="_blank"
+                  class="project-btn"
+                  >Github</a
+                >
+              </div>
+            </main>
+          </div>
+          <div class="project">
+            <header>
+              <span class="etiqueta html">HTML</span>
+              <span class="etiqueta css">CSS</span>
+              <span class="etiqueta js">JS</span>
+            </header>
+            <main>
+              <img src="./images/welcomepage.png" alt="" />
+              <h3>Welcome Page</h3>
+              <p>
+                Pagina de inicio para el navegador, con horario, to-do list y distintos fondos
+                dependiendo el horario.
+              </p>
+              <div class="projects-buttons">
+                <a
+                  href="https://thelaucha.github.io/Dynamic-Welcome-Page"
+                  target="_blank"
+                  class="project-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/TheLaucha/Dynamic-Welcome-Page"
+                  target="_blank"
+                  class="project-btn"
+                  >Github</a
+                >
+              </div>
+            </main>
+          </div>
+          <div class="project">
+            <header>
+              <span class="etiqueta html">HTML</span>
+              <span class="etiqueta css">CSS</span>
+              <span class="etiqueta js">JS</span>
+              <span class="etiqueta bootstrap">BTRAP</span>
+            </header>
+            <main>
+              <img src="./images/digitalagency.png" alt="" />
+              <h3>Landing page digital agency</h3>
+              <p>Lading page hecha en bootstrap para una agencia digital.</p>
+              <div class="projects-buttons">
+                <a
+                  href="https://thelaucha.github.io/Digital-Agency-Landing-Page-Bootstrap"
+                  target="_blank"
+                  class="project-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/TheLaucha/Digital-Agency-Landing-Page-Bootstrap"
+                  target="_blank"
+                  class="project-btn"
+                  >Github</a
+                >
+              </div>
+            </main>
+          </div>
+        </div>
+        <footer class="footer_navigate">
+          <a href="#about-me">
+            <img src="./images/hole_people.png" alt="rabbit hole" />
+            <p>I'm here</p>
+            <p>&darr;</p>
+          </a>
+        </footer>
+      </section>
+    </div>
+
+    <div class="container" id="about-me">
+      <section
+        class="container_section"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-duration="500"
+      >
+        <h2 class="section-title">Sobre mi</h2>
+        <div class="about-container">
+          <article class="about_me_images">
+            <img src="./images/perfil.png" alt="" />
+          </article>
+          <article class="description">
+            <header>
+              <h2>Hola! Mi nombre es <span class="text-blue">Lautaro Espinillo.</span></h2>
+              <h2>
+                Soy <span class="text-blue">Desarrollador Web</span> ubicado en
+                <span class="text-blue">Buenos Aires.</span>
+              </h2>
+            </header>
+            <p>
+              Actualmente estudiando <span class="text-blue">Lic en Informatica</span> en la UNLP.
+            </p>
+            <p>
+              Tambien estudiando de forma autodidacta distintas tecnologias de desarrollo web como
+              <span class="text-blue">MERN Stack</span>
+            </p>
+            <p>Me considero una persona perseverante, organizada y responsable.</p>
+            <div class="social-contact">
+              <a href="./assets/Lautaro_Espinillo_CV.pdf" target="_blank" class="btn-cv button-74"
+                >Ver CV</a
+              >
+              <a
+                href="https://www.linkedin.com/in/lautaro-espinillo/"
+                target="_blank"
+                class="social-media"
+              >
+                <img src="images/icon_linkedin.svg" alt="" id="icon_linkedin" />
+                <p>Linkedin</p>
+              </a>
+              <a href="https://github.com/TheLaucha" target="_blank" class="social-media">
+                <img src="images/icon_github.svg" alt="" id="icon_github" />
+                <p>Github</p>
+              </a>
+            </div>
+          </article>
+        </div>
+        <footer class="footer_navigate">
+          <a href="#contact">
+            <img src="./images/hole_only.png" alt="rabbit hole" />
+            <p>Make contact</p>
+            <p>&darr;</p>
+          </a>
+        </footer>
+      </section>
+    </div>
+
+    <div class="container" id="contact">
+      <section
+        class="container_section"
+        data-aos="flip-right"
+        data-aos-offset="300"
+        data-aos-duration="500"
+      >
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-container">
+          <form action="https://formsubmit.co/espinillo.lautaro@gmail.com" method="POST">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" required placeholder="Lautaro" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="tumail@gmail.com" />
+            <label for="comments">Mensaje</label>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="5"
+              required
+              placeholder="Hola Lautaro! Tenemos una propuesta para hacerte..."
+            ></textarea>
+            <button type="submit" class="form-btn button-74">Enviar</button>
+          </form>
+          <div class="contact-buttons">
+            <a
+              href="https://www.linkedin.com/in/lautaro-espinillo/"
+              target="_blank"
+              class="social-media"
+            >
+              <img src="images/icon_linkedin.svg" alt="" id="icon_linkedin" />
+            </a>
+            <a href="https://github.com/TheLaucha" target="_blank" class="social-media">
+              <img src="images/icon_github.svg" alt="" id="icon_github" />
+            </a>
+          </div>
+        </div>
+        <footer class="footer_navigate">
+          <a href="#">
+            <img src="./images/icon_spaceship.png" alt="spaceship" />
+            <p>Go up!</p>
+            <p>&uarr;</p>
+          </a>
+        </footer>
+      </section>
+    </div>
+
+    <script src="./src/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+  </body>
+</html>
