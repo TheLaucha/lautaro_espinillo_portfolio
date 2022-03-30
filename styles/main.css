@@ -725,7 +725,7 @@ body.light .project-btn:hover {
   }
 
   .switch {
-    align-self: end;
+    align-self: flex-end;
     margin: 0.5rem 2rem;
   }
 
