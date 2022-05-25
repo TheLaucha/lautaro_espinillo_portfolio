@@ -493,7 +493,7 @@ body.light .project {
 .project header .etiqueta {
   border-radius: 0.5rem;
   padding: 0.2rem;
-  width: 50px;
+  min-width: 50px;
   font-size: 0.8rem;
   text-align: center;
   font-weight: 700;
@@ -504,6 +504,15 @@ body.light .project {
 }
 .etiqueta.css {
   background-color: #01a7da;
+}
+.etiqueta.react {
+  background-color: #61dafb;
+}
+.etiqueta.reactRouter {
+  background-color: #f44250;
+}
+.etiqueta.materialUI {
+  background-color: #0067ce;
 }
 .etiqueta.js {
   background-color: #ccb800;
