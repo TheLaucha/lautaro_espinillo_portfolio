@@ -18,11 +18,21 @@
 body {
   font-family: "Titillium Web", sans-serif;
   color: #fff;
+  background-color: #00171F;
+  opacity: 1;
+  background-image:  radial-gradient(#e2e2e233 1px, transparent 1px), radial-gradient(#e2e2e233 1px, #00171F 1px);
+  background-size: 80px 80px;
+  background-position: 0 0,40px 40px;
 }
 
 body.light {
   transition: all 0.2s;
   color: #000;
+  background-color: var(--grey);
+  opacity: 1;
+  background-image:  radial-gradient(#00171f44 1px, transparent 1px), radial-gradient(#00171f44 1px, var(--grey) 1px);
+  background-size: 80px 80px;
+  background-position: 0 0,40px 40px;
 }
 
 a,
@@ -35,12 +45,7 @@ button {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background-color: var(--blue-principal);
-}
-
-body.light .container {
-  transition: all 0.2s;
-  background-color: var(--grey);
+  /* background-color: var(--blue-principal); */
 }
 
 img {
@@ -63,7 +68,6 @@ a {
 
 body.light .container_section {
   transition: all 0.2s;
-  background-color: var(--grey);
 }
 
 h2 {
@@ -213,11 +217,6 @@ body.light .navbar ul li a:hover {
 
 /* HEADER STYLES */
 
-body.light .container#header {
-  transition: all 0.2s;
-  background: var(--grey);
-}
-
 #header .container_section {
   display: grid;
   align-items: center;
@@ -330,6 +329,7 @@ body.light .footer_navigate a {
 #about-me .container_section {
   display: grid;
   justify-items: center;
+  justify-content: center;
 }
 
 #about-me .about-container {
@@ -412,12 +412,12 @@ body.light .social-media {
   display: grid;
   align-content: flex-start;
   justify-items: center;
+  justify-content: center;
 }
 
 #skills section .stack-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-between;
+  grid-template-columns: 1fr;
   width: 100%;
   gap: 2rem;
 }
@@ -425,10 +425,57 @@ body.light .social-media {
 .stack-container .stack {
   padding: 1rem;
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  align-items: center;
+  background-color: var(--blue-secondary);
+  border-radius: 0.5rem;
+  background-color: #003459;
+  opacity: 1;
+  background-image:  radial-gradient(#00171f 1px, transparent 1px), radial-gradient(#00171f 1px, #003459 1px);
+  background-size: 80px 80px;
+  background-position: 0 0,40px 40px;
+}
+
+body.light .stack-container .stack{
+  background-image:  radial-gradient(#e2e2e244 1px, transparent 1px), radial-gradient(#e2e2e244 1px, #003459 1px);
+}
+
+.stack__title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack__techs{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.stack__techs figure{
+  width: 92px;
+}
+
+.stack__techs figure img{
+  width: 4rem;
+  max-width: 70%;
+}
+
+.stack__techs figure figcaption{
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 .stack .stack-icon {
-  width: 3rem;
+  width: 4rem;
   text-align: center;
 }
 
@@ -437,13 +484,10 @@ body.light .social-media {
   font-size: 1.5rem;
   color: var(--grey);
   font-weight: 400;
-  border-bottom: 1px solid #fff;
-  margin-bottom: 1rem;
 }
 
-body.light .stack h6 {
-  color: #000;
-  border-bottom: 1px solid #000;
+body.light .stack-container{
+  color: #fff;
 }
 
 .stack p {
@@ -460,6 +504,7 @@ body.light .stack h6 {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  justify-content: center;
 }
 
 .projects-container {
@@ -476,11 +521,17 @@ body.light .stack h6 {
   background-color: var(--blue-secondary);
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  background-color: #003459;
+  opacity: 1;
+  background-image:  radial-gradient(#00171f 1px, transparent 1px), radial-gradient(#00171f 1px, #003459 1px);
+  background-size: 80px 80px;
+  background-position: 0 0,40px 40px;
 }
 
 body.light .project {
   transition: all 0.2s;
   color: #fff;
+  background-image:  radial-gradient(#e2e2e244 1px, transparent 1px), radial-gradient(#e2e2e244 1px, #003459 1px);
 }
 
 .project header {
@@ -591,8 +642,9 @@ body.light .project-btn:hover {
 
 #contact .container_section {
   display: grid;
-  justify-items: center;
   grid-template-columns: 1fr;
+  justify-items: center;
+  justify-content: center;
 }
 
 .contact-container {
@@ -679,10 +731,6 @@ body.light .project-btn:hover {
 
   .container_section {
     width: 700px;
-  }
-
-  #skills section .stack-container {
-    grid-template-columns: 1fr;
   }
 
   #portfolio .projects-container {
@@ -775,6 +823,14 @@ body.light .project-btn:hover {
 
   .social-media-icons {
     justify-content: center;
+  }
+
+  .stack h6{
+    border-bottom: var(--grey) 1px solid;
+  }
+  
+  .stack-container .stack{
+    grid-template-columns: 1fr;
   }
 
   #about-me .about_me_images img {
